@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <title> Live VIrtual Class </title>
+  <link rel="stylesheet" href="link1.css">
+  <style>header{background-color:aqua;height: 200px;} 
+
+  </style>
+
+  <script>
+
+    function jfun1()
+    {
+     //alert("Welcome to My Website!!!")
+    //document.write("<h1>Welcome to My Website!!!</h1")
+    //window.open("welcome.html")
+    //window.open("welcome.html", "", "width=200,height=100");
+   // prompt("please enter your email for subscription")
+
+   var m=parseInt(frm1.t1.value)
+   var e= parseInt(frm1.t2.value)
+   var c=parseInt(frm1.t3.value)         
+   tmarks=m+e+c;
+
+frm1.t4.value=tmarks
+frm1.t5.value=tmarks/3
+
+if(m>e && m>c)
+{
+max=m
+}
+else if(e>m && e>c)
+{
+max=e
+}
+else
+{
+max=c
+}
+
+
+frm1.t6.value=max;
+    }
+
+
+
+  </script>
+
+</head>
+
+<body onload="jfun1()">
+
+
+<header>
+<br>
+<br>
+	<h1 style="background-color: yellowgreen;text-align: center;"> ENTERTAINMENT</h1>
+</header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Home.html">Home</a></li>
+              <li><a class="dropdown-item" href="Music.html">Music</a></li>
+              <li><a class="dropdown-item" href="Dance.html">Dance</a></li>
+              <li><a class="dropdown-item" href="Registration.html">Registration</a></li>
+              <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="Contact Us.html">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section style="text-align: center;">
+	<article> Welcome to LVC </article>
+</section>
+
+  <h2>Student Marks</h2>
+<div style="background-color: aquamarine;width: 800px;height:400px;">
+
+    <form name="frm1">
+
+
+            <pre>
+        
+        name         <input type="text">
+        Marks:      
+        Maths <input type="text" name="t1"> English<input type="text" name="t2">Computer<input type="text" name="t3">
+
+
+
+        result:      
+        Total Marks  <input type="text" name="t4">
+        Percentage   <input type="text" name="t5">
+        Max Marks    <input type="text" name="t6">
+        
+    
+        <input type="button" value="result" onclick="jfun1()">
+    </pre>
+    
+    </form>
+
+
+
+
+</div>
+
+
+
+
+
+
+<footer style="background-color: brown;height:200px;text-align: center;">
+    <br>
+    <br>
+   
+
+</body>
+</html>
